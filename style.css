@@ -1,0 +1,91 @@
+/* importing font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=RocknRoll+One&display=swap');
+
+
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    background-image: radial-gradient(black, white);
+}
+
+
+body{
+    background-image: linear-gradient(rgb(121, 121, 241), #ff9b9b);
+    width: 50%;
+    margin: auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    border-bottom: 1px black solid;
+}
+
+#lyircs{
+    margin: 0 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: inherit;
+}
+
+#lyircs h2{
+    text-align: center;
+}
+
+
+section{
+    font-size: 1.2rem;
+    margin-bottom: 2.5em;
+}
+
+p{
+    line-height: 1;
+}
+
+section:nth-of-type(odd) p{
+    line-height: 0.9;
+}
+section:nth-of-type(odd){
+    font-family: 'New Rocker', cursive;
+}
+section:nth-of-type(even){
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: end;
+}
+
+
+footer{
+    text-align: center;
+    border-top: black 1px solid;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+}
+
+
+/* utility classes */
+.big{
+    font-size: 1.3em;
+}
+.bigger{
+    font-size: 1.6em;
+}
+
+.shout{
+    font-size: 1.7em;
+}
+
+.hidden{
+    position: absolute;
+    left: -9999px;
+}
